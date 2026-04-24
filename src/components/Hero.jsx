@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import Pizza from "../asset/Pizza.png"
-import Drink from "../asset/Drink.png"
+import Drink from "../asset/drink.png"
 import Glass from "../asset/glasdrink.png"
 import Burger from "../asset/burger.png"
 import EsCream from "../asset/escream.png"
