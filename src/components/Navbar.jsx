@@ -81,7 +81,7 @@ export default function Navbar({ isDark, setIsDark }) {
 
             {/* Reserve CTA */}
             <motion.button
-              className="hidden md:block px-5 py-2 bg-ember text-cream text-xs tracking-widest uppercase font-body rounded-full hover:bg-ember-light transition-colors duration-300"
+              className="hidden md:block px-5 py-2 bg-ember text-charcoal dark:text-cream text-xs tracking-widest uppercase font-body rounded-full hover:bg-ember-light transition-colors duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -90,7 +90,7 @@ export default function Navbar({ isDark, setIsDark }) {
 
             {/* Mobile menu */}
             <motion.button
-              className="md:hidden text-cream"
+              className="md:hidden text-charcoal dark:text-cream"
               onClick={() => setMobileOpen(!mobileOpen)}
               whileTap={{ scale: 0.9 }}
             >
@@ -108,7 +108,7 @@ export default function Navbar({ isDark, setIsDark }) {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className="fixed inset-0 z-40 bg-charcoal flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-40 bg-cream dark:bg-charcoal flex flex-col items-center justify-center gap-8"
           >
             {navLinks.map((link, i) => (
               <motion.button
@@ -117,7 +117,7 @@ export default function Navbar({ isDark, setIsDark }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.06 }}
                 onClick={() => scrollTo(link)}
-                className="font-display text-5xl text-cream hover:text-ember transition-colors"
+                className="font-display text-5xl text-charcoal dark:text-cream hover:text-ember transition-colors"
               >
                 {link}
               </motion.button>
